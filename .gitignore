@@ -11,7 +11,8 @@
 /storage/pail
 /vendor
 .env
-.env.*
+.env.neon
+.env.psql
 .phpactor.json
 .phpunit.result.cache
 Homestead.json
