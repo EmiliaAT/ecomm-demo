@@ -46,5 +46,8 @@ jobs:
       - name: Build Assets
         run: npm run build
 
-      - name: Tests
+      - name: Frontend Tests
+        run: LARAVEL_BYPASS_ENV_CHECK=1 npm run test
+
+      - name: Backend Tests
         run: ./vendor/bin/phpunit
